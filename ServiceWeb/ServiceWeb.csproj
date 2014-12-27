@@ -1,0 +1,959 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F77B0AFD-C099-4FD8-B152-4A89C122C1D1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ServiceWeb</RootNamespace>
+    <AssemblyName>ServiceWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager, Version=7.4.5.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Administrator.PJFRHNQP9FWEEZP\Desktop\fenye\Bin\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="jsb">
+      <HintPath>C:\Users\Administrator.PJFRHNQP9FWEEZP\Desktop\jsb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddDemands.aspx" />
+    <Content Include="Admin\country\Country.aspx" />
+    <Content Include="Admin\css\bui-min.css" />
+    <Content Include="Admin\css\dpl-min.css" />
+    <Content Include="Admin\css\extend-min.css" />
+    <Content Include="Admin\css\grid-min.css" />
+    <Content Include="Admin\css\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Admin\css\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Admin\css\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Admin\css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Admin\css\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Admin\css\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Admin\css\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Admin\css\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Admin\css\images\ui-icons_222222_256x240.png" />
+    <Content Include="Admin\css\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Admin\css\images\ui-icons_454545_256x240.png" />
+    <Content Include="Admin\css\images\ui-icons_888888_256x240.png" />
+    <Content Include="Admin\css\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Admin\css\jquery-ui.css" />
+    <Content Include="Admin\css\main-min.css" />
+    <Content Include="Admin\css\main.css" />
+    <Content Include="Admin\css\menu-min.css" />
+    <Content Include="Admin\css\overlay-min.css" />
+    <Content Include="Admin\css\page-min.css" />
+    <Content Include="Admin\css\page.css" />
+    <Content Include="Admin\css\prettify.css" />
+    <Content Include="Admin\css\select-min.css" />
+    <Content Include="Admin\css\slider-min.css" />
+    <Content Include="Admin\css\tab-min.css" />
+    <Content Include="Admin\css\selectdate.css" />
+    <Content Include="Admin\Demand\Banli.aspx" />
+    <Content Include="Admin\Demand\BanliDetailed.aspx" />
+    <Content Include="Admin\Demand\Demand.aspx" />
+    <Content Include="Admin\Demand\DemandProfile.aspx" />
+    <Content Include="Admin\Demand\DemandProfileshow.aspx" />
+    <Content Include="Admin\Demand\DemandResult.aspx" />
+    <Content Include="Admin\Demand\DemandShow.aspx" />
+    <Content Include="Admin\Demand\DemandType.aspx" />
+    <Content Include="Admin\Demand\UpdateDemands.aspx" />
+    <Content Include="Admin\Deperment\ContactNameADD.aspx" />
+    <Content Include="Admin\Deperment\DeparmentShow.aspx" />
+    <Content Include="Admin\img\anniu_03.gif" />
+    <Content Include="Admin\img\bg.jpg" />
+    <Content Include="Admin\img\bg.png" />
+    <Content Include="Admin\img\denglu.gif" />
+    <Content Include="Admin\index.aspx" />
+    <Content Include="Admin\js\common.js" />
+    <Content Include="Admin\js\common\build.xml" />
+    <Content Include="Admin\js\common\main-min.js" />
+    <Content Include="Admin\js\common\main.js" />
+    <Content Include="Admin\js\common\page-min.js" />
+    <Content Include="Admin\js\common\page.js" />
+    <Content Include="Admin\js\common\search-min.js" />
+    <Content Include="Admin\js\common\search.js" />
+    <Content Include="Admin\js\common\tooltip-min.js" />
+    <Content Include="Admin\js\common\tooltip.js" />
+    <Content Include="Admin\js\data.js" />
+    <Content Include="Admin\js\extensions\treegrid-min.js" />
+    <Content Include="Admin\js\extensions\treepicker-min.js" />
+    <Content Include="Admin\js\form.js" />
+    <Content Include="Admin\js\grid.js" />
+    <Content Include="Admin\js\jquery-1.9.1.min.js" />
+    <Content Include="Admin\js\jquery.md5.js" />
+    <Content Include="Admin\js\list.js" />
+    <Content Include="Admin\js\loader.js" />
+    <Content Include="Admin\js\menu.js" />
+    <Content Include="Admin\js\module\build.xml" />
+    <Content Include="Admin\js\overlay.js" />
+    <Content Include="Admin\js\seed-min.js.js" />
+    <Content Include="Admin\js\select.js" />
+    <Content Include="Admin\js\slider.js" />
+    <Content Include="Admin\js\tab.js" />
+    <Content Include="Admin\js\util.js" />
+    <Content Include="Admin\Login.aspx" />
+    <Content Include="Admin\Loginout.aspx" />
+    <Content Include="Admin\script\banli.js" />
+    <Content Include="Admin\script\demandresult.js" />
+    <Content Include="Admin\script\png.js" />
+    <Content Include="Admin\style\login.css" />
+    <Content Include="Admin\uploadbanner\AddBanner.aspx" />
+    <Content Include="Admin\uploadbanner\BannerShow.aspx" />
+    <Content Include="Admin\uploadbanner\UpdateBannImg.aspx" />
+    <Content Include="Admin\zdompany\ComPanyShow.aspx" />
+    <Content Include="Admin\zdompany\UpdateCompany.aspx" />
+    <Content Include="bao_ValidCode.aspx" />
+    <Content Include="CompanyLogo.aspx" />
+    <Content Include="DemandList.aspx" />
+    <Content Include="DemandsDetail.aspx" />
+    <Content Include="FindPasspwod.aspx" />
+    <Content Include="Handler\HeadMenu.ascx" />
+    <Content Include="Handler\WebFoot.ascx" />
+    <Content Include="images\banner.swf" />
+    <Content Include="images\btn1.png" />
+    <Content Include="images\cancel-off.png" />
+    <Content Include="images\cancel-on.png" />
+    <Content Include="images\dash.jpg" />
+    <Content Include="images\defaultlogo.jpg" />
+    <Content Include="images\exit_1.jpg" />
+    <Content Include="images\exit_button.jpg" />
+    <Content Include="images\lanse.jpg" />
+    <Content Include="images\login.jpg" />
+    <Content Include="images\qys.jpg" />
+    <Content Include="images\saixuan.jpg" />
+    <Content Include="images\star-half.png" />
+    <Content Include="images\star-off.png" />
+    <Content Include="images\star-on.png" />
+    <Content Include="images\suqiu.jpg" />
+    <Content Include="images\title03.jpg" />
+    <Content Include="images\tongjibtn.jpg" />
+    <Content Include="images\update_1.jpg" />
+    <Content Include="images\xingxing_03.jpg" />
+    <Content Include="images\xingxing_03.png" />
+    <Content Include="images\xiugai.jpg" />
+    <Content Include="images\zdbg.jpg" />
+    <Content Include="Login.aspx" />
+    <Content Include="Loginout.aspx" />
+    <Content Include="MyDemands.aspx" />
+    <Content Include="Neirong.aspx" />
+    <Content Include="News.aspx" />
+    <Content Include="PostDetail.aspx" />
+    <Content Include="Scripts\HomePageFavorite.js" />
+    <Content Include="Scripts\index.js" />
+    <Content Include="Admin\script\shouli.js" />
+    <Content Include="Admin\Shuqiushouli\Refuse.aspx" />
+    <Content Include="Admin\style\admin.css" />
+    <Content Include="Admin\urlredirect.aspx" />
+    <Content Include="Admin\UserControls\Head.ascx" />
+    <Content Include="Handler\WebHead.ascx" />
+    <Content Include="Admin\img\calendar-200-300.gif" />
+    <Content Include="Admin\img\checkbox.gif" />
+    <Content Include="Admin\img\check_icon-100-100.gif" />
+    <Content Include="Admin\img\hide_list.png" />
+    <Content Include="Admin\img\left-slib.gif" />
+    <Content Include="Admin\img\load-16-16.gif" />
+    <Content Include="Admin\img\main-nav-bg.png" />
+    <Content Include="Admin\img\main-nav-bg1.png" />
+    <Content Include="Admin\img\menu-500-188.png" />
+    <Content Include="Admin\img\menu.jpg" />
+    <Content Include="Admin\img\nav.jpg" />
+    <Content Include="Admin\img\nav_selected.png" />
+    <Content Include="Admin\img\radio_icon-64-40.gif" />
+    <Content Include="Admin\img\resource.jpg" />
+    <Content Include="Admin\img\separator-2-340.gif" />
+    <Content Include="Admin\img\sprite-469-300.png" />
+    <Content Include="Admin\img\tab-140-120.gif" />
+    <Content Include="Admin\img\table-191-450.gif" />
+    <Content Include="Admin\img\tree.gif" />
+    <Content Include="Admin\img\tree_icon-80-100.gif" />
+    <Content Include="Admin\img\white_sprite-469-300.png" />
+    <Content Include="Admin\js\bui-min.js" />
+    <Content Include="Admin\js\bui.js" />
+    <Content Include="Admin\js\config-min.js" />
+    <Content Include="Admin\js\config.js" />
+    <Content Include="Admin\js\handlebars.js" />
+    <Content Include="Admin\js\jquery-1.4.4.min.js" />
+    <Content Include="Admin\js\jquery-1.4.4.src.js" />
+    <Content Include="Admin\js\jquery-1.8.1.min.js" />
+    <Content Include="Admin\js\jquery.min.js" />
+    <Content Include="Admin\js\prettify.js" />
+    <Content Include="Admin\js\slider-min.js" />
+    <Content Include="Admin\js\xheditor-zh-cn.min.js" />
+    <Content Include="Admin\post\Post.aspx" />
+    <Content Include="Admin\post\PostShow.aspx" />
+    <Content Include="Admin\Shuqiushouli\SelectDemand.aspx" />
+    <Content Include="Admin\Shuqiushouli\Shouli.aspx" />
+    <Content Include="Admin\Ueditor\dialogs\anchor\anchor.html" />
+    <Content Include="Admin\Ueditor\dialogs\attachment\attachment.css" />
+    <Content Include="Admin\Ueditor\dialogs\attachment\attachment.html" />
+    <Content Include="Admin\Ueditor\dialogs\attachment\callbacks.js" />
+    <Content Include="Admin\Ueditor\dialogs\attachment\fileTypeImages\icon_chm.gif" />
+    <Content Include="Admin\Ueditor\dialogs\attachment\fileTypeImages\icon_default.png" />
+    <Content Include="Admin\Ueditor\dialogs\attachment\fileTypeImages\icon_doc.gif" />
+    <Content Include="Admin\Ueditor\dialogs\attachment\fileTypeImages\icon_exe.gif" />
+    <Content Include="Admin\Ueditor\dialogs\attachment\fileTypeImages\icon_mp3.gif" />
+    <Content Include="Admin\Ueditor\dialogs\attachment\fileTypeImages\icon_mv.gif" />
+    <Content Include="Admin\Ueditor\dialogs\attachment\fileTypeImages\icon_pdf.gif" />
+    <Content Include="Admin\Ueditor\dialogs\attachment\fileTypeImages\icon_ppt.gif" />
+    <Content Include="Admin\Ueditor\dialogs\attachment\fileTypeImages\icon_psd.gif" />
+    <Content Include="Admin\Ueditor\dialogs\attachment\fileTypeImages\icon_rar.gif" />
+    <Content Include="Admin\Ueditor\dialogs\attachment\fileTypeImages\icon_txt.gif" />
+    <Content Include="Admin\Ueditor\dialogs\attachment\fileTypeImages\icon_xls.gif" />
+    <Content Include="Admin\Ueditor\dialogs\attachment\fileTypeMaps.js" />
+    <Content Include="Admin\Ueditor\dialogs\background\background.css" />
+    <Content Include="Admin\Ueditor\dialogs\background\background.html" />
+    <Content Include="Admin\Ueditor\dialogs\background\background.js" />
+    <Content Include="Admin\Ueditor\dialogs\emotion\emotion.css" />
+    <Content Include="Admin\Ueditor\dialogs\emotion\emotion.html" />
+    <Content Include="Admin\Ueditor\dialogs\emotion\emotion.js" />
+    <Content Include="Admin\Ueditor\dialogs\emotion\images\0.gif" />
+    <Content Include="Admin\Ueditor\dialogs\emotion\images\bface.gif" />
+    <Content Include="Admin\Ueditor\dialogs\emotion\images\cface.gif" />
+    <Content Include="Admin\Ueditor\dialogs\emotion\images\fface.gif" />
+    <Content Include="Admin\Ueditor\dialogs\emotion\images\jxface2.gif" />
+    <Content Include="Admin\Ueditor\dialogs\emotion\images\neweditor-tab-bg.png" />
+    <Content Include="Admin\Ueditor\dialogs\emotion\images\tface.gif" />
+    <Content Include="Admin\Ueditor\dialogs\emotion\images\wface.gif" />
+    <Content Include="Admin\Ueditor\dialogs\emotion\images\yface.gif" />
+    <Content Include="Admin\Ueditor\dialogs\gmap\gmap.html" />
+    <Content Include="Admin\Ueditor\dialogs\help\help.css" />
+    <Content Include="Admin\Ueditor\dialogs\help\help.html" />
+    <Content Include="Admin\Ueditor\dialogs\help\help.js" />
+    <Content Include="Admin\Ueditor\dialogs\image\image.css" />
+    <Content Include="Admin\Ueditor\dialogs\image\image.html" />
+    <Content Include="Admin\Ueditor\dialogs\image\image.js" />
+    <Content Include="Admin\Ueditor\dialogs\image\images\center_focus.jpg" />
+    <Content Include="Admin\Ueditor\dialogs\image\images\left_focus.jpg" />
+    <Content Include="Admin\Ueditor\dialogs\image\images\none_focus.jpg" />
+    <Content Include="Admin\Ueditor\dialogs\image\images\right_focus.jpg" />
+    <Content Include="Admin\Ueditor\dialogs\image\imageUploader.swf" />
+    <Content Include="Admin\Ueditor\dialogs\insertframe\insertframe.html" />
+    <Content Include="Admin\Ueditor\dialogs\internal.js" />
+    <Content Include="Admin\Ueditor\dialogs\link\link.html" />
+    <Content Include="Admin\Ueditor\dialogs\map\map.html" />
+    <Content Include="Admin\Ueditor\dialogs\music\music.css" />
+    <Content Include="Admin\Ueditor\dialogs\music\music.html" />
+    <Content Include="Admin\Ueditor\dialogs\music\music.js" />
+    <Content Include="Admin\Ueditor\dialogs\scrawl\images\addimg.png" />
+    <Content Include="Admin\Ueditor\dialogs\scrawl\images\brush.png" />
+    <Content Include="Admin\Ueditor\dialogs\scrawl\images\delimg.png" />
+    <Content Include="Admin\Ueditor\dialogs\scrawl\images\delimgH.png" />
+    <Content Include="Admin\Ueditor\dialogs\scrawl\images\empty.png" />
+    <Content Include="Admin\Ueditor\dialogs\scrawl\images\emptyH.png" />
+    <Content Include="Admin\Ueditor\dialogs\scrawl\images\eraser.png" />
+    <Content Include="Admin\Ueditor\dialogs\scrawl\images\redo.png" />
+    <Content Include="Admin\Ueditor\dialogs\scrawl\images\redoH.png" />
+    <Content Include="Admin\Ueditor\dialogs\scrawl\images\scale.png" />
+    <Content Include="Admin\Ueditor\dialogs\scrawl\images\scaleH.png" />
+    <Content Include="Admin\Ueditor\dialogs\scrawl\images\size.png" />
+    <Content Include="Admin\Ueditor\dialogs\scrawl\images\undo.png" />
+    <Content Include="Admin\Ueditor\dialogs\scrawl\images\undoH.png" />
+    <Content Include="Admin\Ueditor\dialogs\scrawl\scrawl.css" />
+    <Content Include="Admin\Ueditor\dialogs\scrawl\scrawl.html" />
+    <Content Include="Admin\Ueditor\dialogs\scrawl\scrawl.js" />
+    <Content Include="Admin\Ueditor\dialogs\searchreplace\searchreplace.html" />
+    <Content Include="Admin\Ueditor\dialogs\searchreplace\searchreplace.js" />
+    <Content Include="Admin\Ueditor\dialogs\snapscreen\snapscreen.html" />
+    <Content Include="Admin\Ueditor\dialogs\spechars\spechars.html" />
+    <Content Include="Admin\Ueditor\dialogs\spechars\spechars.js" />
+    <Content Include="Admin\Ueditor\dialogs\table\dragicon.png" />
+    <Content Include="Admin\Ueditor\dialogs\table\edittable.css" />
+    <Content Include="Admin\Ueditor\dialogs\table\edittable.html" />
+    <Content Include="Admin\Ueditor\dialogs\table\edittable.js" />
+    <Content Include="Admin\Ueditor\dialogs\table\edittd.html" />
+    <Content Include="Admin\Ueditor\dialogs\table\edittip.html" />
+    <Content Include="Admin\Ueditor\dialogs\tangram.js" />
+    <Content Include="Admin\Ueditor\dialogs\template\config.js" />
+    <Content Include="Admin\Ueditor\dialogs\template\images\bg.gif" />
+    <Content Include="Admin\Ueditor\dialogs\template\images\pre0.png" />
+    <Content Include="Admin\Ueditor\dialogs\template\images\pre1.png" />
+    <Content Include="Admin\Ueditor\dialogs\template\images\pre2.png" />
+    <Content Include="Admin\Ueditor\dialogs\template\images\pre3.png" />
+    <Content Include="Admin\Ueditor\dialogs\template\images\pre4.png" />
+    <Content Include="Admin\Ueditor\dialogs\template\template.css" />
+    <Content Include="Admin\Ueditor\dialogs\template\template.html" />
+    <Content Include="Admin\Ueditor\dialogs\template\template.js" />
+    <Content Include="Admin\Ueditor\dialogs\video\images\center_focus.jpg" />
+    <Content Include="Admin\Ueditor\dialogs\video\images\left_focus.jpg" />
+    <Content Include="Admin\Ueditor\dialogs\video\images\none_focus.jpg" />
+    <Content Include="Admin\Ueditor\dialogs\video\images\right_focus.jpg" />
+    <Content Include="Admin\Ueditor\dialogs\video\video.css" />
+    <Content Include="Admin\Ueditor\dialogs\video\video.html" />
+    <Content Include="Admin\Ueditor\dialogs\video\video.js" />
+    <Content Include="Admin\Ueditor\dialogs\webapp\webapp.html" />
+    <Content Include="Admin\Ueditor\dialogs\wordimage\fClipboard_ueditor.swf" />
+    <Content Include="Admin\Ueditor\dialogs\wordimage\imageUploader.swf" />
+    <Content Include="Admin\Ueditor\dialogs\wordimage\wordimage.html" />
+    <Content Include="Admin\Ueditor\dialogs\wordimage\wordimage.js" />
+    <Content Include="Admin\Ueditor\lang\en\en.js" />
+    <Content Include="Admin\Ueditor\lang\en\images\addimage.png" />
+    <Content Include="Admin\Ueditor\lang\en\images\alldeletebtnhoverskin.png" />
+    <Content Include="Admin\Ueditor\lang\en\images\alldeletebtnupskin.png" />
+    <Content Include="Admin\Ueditor\lang\en\images\background.png" />
+    <Content Include="Admin\Ueditor\lang\en\images\button.png" />
+    <Content Include="Admin\Ueditor\lang\en\images\copy.png" />
+    <Content Include="Admin\Ueditor\lang\en\images\deletedisable.png" />
+    <Content Include="Admin\Ueditor\lang\en\images\deleteenable.png" />
+    <Content Include="Admin\Ueditor\lang\en\images\imglabel.png" />
+    <Content Include="Admin\Ueditor\lang\en\images\listbackground.png" />
+    <Content Include="Admin\Ueditor\lang\en\images\localimage.png" />
+    <Content Include="Admin\Ueditor\lang\en\images\music.png" />
+    <Content Include="Admin\Ueditor\lang\en\images\rotateleftdisable.png" />
+    <Content Include="Admin\Ueditor\lang\en\images\rotateleftenable.png" />
+    <Content Include="Admin\Ueditor\lang\en\images\rotaterightdisable.png" />
+    <Content Include="Admin\Ueditor\lang\en\images\rotaterightenable.png" />
+    <Content Include="Admin\Ueditor\lang\en\images\upload.png" />
+    <Content Include="Admin\Ueditor\lang\zh-cn\images\copy.png" />
+    <Content Include="Admin\Ueditor\lang\zh-cn\images\imglabel.png" />
+    <Content Include="Admin\Ueditor\lang\zh-cn\images\localimage.png" />
+    <Content Include="Admin\Ueditor\lang\zh-cn\images\music.png" />
+    <Content Include="Admin\Ueditor\lang\zh-cn\images\upload.png" />
+    <Content Include="Admin\Ueditor\lang\zh-cn\zh-cn.js" />
+    <Content Include="Admin\Ueditor\themes\default\css\ueditor.css" />
+    <Content Include="Admin\Ueditor\themes\default\dialogbase.css" />
+    <Content Include="Admin\Ueditor\themes\default\images\anchor.gif" />
+    <Content Include="Admin\Ueditor\themes\default\images\arrow.png" />
+    <Content Include="Admin\Ueditor\themes\default\images\arrow_down.png" />
+    <Content Include="Admin\Ueditor\themes\default\images\arrow_up.png" />
+    <Content Include="Admin\Ueditor\themes\default\images\button-bg.gif" />
+    <Content Include="Admin\Ueditor\themes\default\images\cancelbutton.gif" />
+    <Content Include="Admin\Ueditor\themes\default\images\cursor_h.gif" />
+    <Content Include="Admin\Ueditor\themes\default\images\cursor_h.png" />
+    <Content Include="Admin\Ueditor\themes\default\images\cursor_v.gif" />
+    <Content Include="Admin\Ueditor\themes\default\images\cursor_v.png" />
+    <Content Include="Admin\Ueditor\themes\default\images\dialog-title-bg.png" />
+    <Content Include="Admin\Ueditor\themes\default\images\filescan.png" />
+    <Content Include="Admin\Ueditor\themes\default\images\highlighted.gif" />
+    <Content Include="Admin\Ueditor\themes\default\images\icons-all.gif" />
+    <Content Include="Admin\Ueditor\themes\default\images\icons.gif" />
+    <Content Include="Admin\Ueditor\themes\default\images\icons.png" />
+    <Content Include="Admin\Ueditor\themes\default\images\lock.gif" />
+    <Content Include="Admin\Ueditor\themes\default\images\neweditor-tab-bg.png" />
+    <Content Include="Admin\Ueditor\themes\default\images\pagebreak.gif" />
+    <Content Include="Admin\Ueditor\themes\default\images\scale.png" />
+    <Content Include="Admin\Ueditor\themes\default\images\spacer.gif" />
+    <Content Include="Admin\Ueditor\themes\default\images\sparator_v.png" />
+    <Content Include="Admin\Ueditor\themes\default\images\table-cell-align.png" />
+    <Content Include="Admin\Ueditor\themes\default\images\tangram-colorpicker.png" />
+    <Content Include="Admin\Ueditor\themes\default\images\toolbar_bg.png" />
+    <Content Include="Admin\Ueditor\themes\default\images\unhighlighted.gif" />
+    <Content Include="Admin\Ueditor\themes\default\images\upload.png" />
+    <Content Include="Admin\Ueditor\themes\default\images\videologo.gif" />
+    <Content Include="Admin\Ueditor\themes\default\images\word.gif" />
+    <Content Include="Admin\Ueditor\themes\default\images\wordpaste.png" />
+    <Content Include="Admin\Ueditor\themes\iframe.css" />
+    <Content Include="Admin\Ueditor\third-party\codemirror\codemirror.css" />
+    <Content Include="Admin\Ueditor\third-party\codemirror\codemirror.js" />
+    <Content Include="Admin\Ueditor\third-party\snapscreen\UEditorSnapscreen.exe" />
+    <Content Include="Admin\Ueditor\third-party\swfupload\fileprogress.js" />
+    <Content Include="Admin\Ueditor\third-party\swfupload\swfupload.cookies.js" />
+    <Content Include="Admin\Ueditor\third-party\swfupload\swfupload.js" />
+    <Content Include="Admin\Ueditor\third-party\swfupload\swfupload.proxy.js" />
+    <Content Include="Admin\Ueditor\third-party\swfupload\swfupload.queue.js" />
+    <Content Include="Admin\Ueditor\third-party\swfupload\swfupload.speed.js" />
+    <Content Include="Admin\Ueditor\third-party\swfupload\swfupload.swf" />
+    <Content Include="Admin\Ueditor\third-party\swfupload\swfupload_fp9.swf" />
+    <Content Include="Admin\Ueditor\third-party\SyntaxHighlighter\shCore.js" />
+    <Content Include="Admin\Ueditor\third-party\SyntaxHighlighter\shCoreDefault.css" />
+    <Content Include="Admin\Ueditor\ueditor.all.js" />
+    <Content Include="Admin\Ueditor\ueditor.all.min.js" />
+    <Content Include="Admin\Ueditor\ueditor.config.js" />
+    <Content Include="Admin\Ueditor\ueditor.parse.js" />
+    <Content Include="Admin\user\UserAdd.aspx" />
+    <Content Include="Admin\user\UserProfileAdd.aspx" />
+    <Content Include="Admin\user\UserProfileShow.aspx" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\but_next.jpg" />
+    <Content Include="images\but_sub.jpg" />
+    <Content Include="images\down.jpg" />
+    <Content Include="images\gx.jpg" />
+    <Content Include="images\home.jpg" />
+    <Content Include="images\hover01.jpg" />
+    <Content Include="images\hover02.jpg" />
+    <Content Include="images\hover03.jpg" />
+    <Content Include="images\img01.jpg" />
+    <Content Include="images\img02.png" />
+    <Content Include="images\lb_01.jpg" />
+    <Content Include="images\line.jpg" />
+    <Content Include="images\list.jpg" />
+    <Content Include="images\list01.jpg" />
+    <Content Include="images\login_bg.jpg" />
+    <Content Include="images\login_btn.png" />
+    <Content Include="images\logo1.jpg" />
+    <Content Include="images\nav_bg.jpg" />
+    <Content Include="images\news01.jpg" />
+    <Content Include="images\red_star.jpg" />
+    <Content Include="images\sanjiao.jpg" />
+    <Content Include="images\search.png" />
+    <Content Include="images\search01.jpg" />
+    <Content Include="images\star.jpg" />
+    <Content Include="images\star01.jpg" />
+    <Content Include="images\star02.jpg" />
+    <Content Include="images\step_01.jpg" />
+    <Content Include="images\step_02.jpg" />
+    <Content Include="images\step_03.jpg" />
+    <Content Include="images\title01.jpg" />
+    <Content Include="images\title02.png" />
+    <Content Include="images\title04.jpg" />
+    <Content Include="images\top_bg.jpg" />
+    <Content Include="images\up.jpg" />
+    <Content Include="images\weather.png" />
+    <Content Include="images\xq_03.jpg" />
+    <Content Include="images\xq_btn.jpg" />
+    <Content Include="images\yanz.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="RegisterSecond.aspx" />
+    <Content Include="RegisterThird .aspx" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.8.1.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery.raty.min.js" />
+    <Content Include="Scripts\login.js" />
+    <Content Include="Scripts\nei.js" />
+    <Content Include="Scripts\pic_nav.js" />
+    <Content Include="Scripts\pinfen.js" />
+    <Content Include="Scripts\setup.js" />
+    <Content Include="Scripts\slideshow.js" />
+    <Content Include="Scripts\wbox-min.js" />
+    <Content Include="Scripts\yzm.js" />
+    <Content Include="Scripts\zhuzhandate.js" />
+    <Content Include="ServiceNews.aspx" />
+    <Content Include="Styles\style.css" />
+    <Content Include="TongJi.aspx" />
+    <Content Include="updatepwd.aspx" />
+    <Content Include="UpdateUserpfile.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddDemands.aspx.cs">
+      <DependentUpon>AddDemands.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddDemands.aspx.designer.cs">
+      <DependentUpon>AddDemands.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\country\Country.aspx.cs">
+      <DependentUpon>Country.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\country\Country.aspx.designer.cs">
+      <DependentUpon>Country.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Demand\banli.ashx.cs">
+      <DependentUpon>banli.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Demand\Banli.aspx.cs">
+      <DependentUpon>Banli.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Demand\Banli.aspx.designer.cs">
+      <DependentUpon>Banli.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Demand\BanliDetailed.aspx.cs">
+      <DependentUpon>BanliDetailed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Demand\BanliDetailed.aspx.designer.cs">
+      <DependentUpon>BanliDetailed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Demand\Demand.aspx.cs">
+      <DependentUpon>Demand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Demand\Demand.aspx.designer.cs">
+      <DependentUpon>Demand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Demand\DemandProfile.aspx.cs">
+      <DependentUpon>DemandProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Demand\DemandProfile.aspx.designer.cs">
+      <DependentUpon>DemandProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Demand\DemandProfileshow.aspx.cs">
+      <DependentUpon>DemandProfileshow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Demand\DemandProfileshow.aspx.designer.cs">
+      <DependentUpon>DemandProfileshow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Demand\DemandResult.aspx.cs">
+      <DependentUpon>DemandResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Demand\DemandResult.aspx.designer.cs">
+      <DependentUpon>DemandResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Demand\DemandShow.aspx.cs">
+      <DependentUpon>DemandShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Demand\DemandShow.aspx.designer.cs">
+      <DependentUpon>DemandShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Demand\DemandType.aspx.cs">
+      <DependentUpon>DemandType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Demand\DemandType.aspx.designer.cs">
+      <DependentUpon>DemandType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Demand\UpdateDemands.aspx.cs">
+      <DependentUpon>UpdateDemands.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Demand\UpdateDemands.aspx.designer.cs">
+      <DependentUpon>UpdateDemands.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Deperment\ContactNameADD.aspx.cs">
+      <DependentUpon>ContactNameADD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Deperment\ContactNameADD.aspx.designer.cs">
+      <DependentUpon>ContactNameADD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Deperment\DeparmentShow.aspx.cs">
+      <DependentUpon>DeparmentShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Deperment\DeparmentShow.aspx.designer.cs">
+      <DependentUpon>DeparmentShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Loginout.aspx.cs">
+      <DependentUpon>Loginout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Loginout.aspx.designer.cs">
+      <DependentUpon>Loginout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\post\Post.aspx.cs">
+      <DependentUpon>Post.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\post\Post.aspx.designer.cs">
+      <DependentUpon>Post.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\uploadbanner\AddBanner.aspx.cs">
+      <DependentUpon>AddBanner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\uploadbanner\AddBanner.aspx.designer.cs">
+      <DependentUpon>AddBanner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\uploadbanner\BannerShow.aspx.cs">
+      <DependentUpon>BannerShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\uploadbanner\BannerShow.aspx.designer.cs">
+      <DependentUpon>BannerShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\uploadbanner\UpdateBannImg.aspx.cs">
+      <DependentUpon>UpdateBannImg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\uploadbanner\UpdateBannImg.aspx.designer.cs">
+      <DependentUpon>UpdateBannImg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\urlredirect.aspx.cs">
+      <DependentUpon>urlredirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\urlredirect.aspx.designer.cs">
+      <DependentUpon>urlredirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\zdompany\ComPanyShow.aspx.cs">
+      <DependentUpon>ComPanyShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\zdompany\ComPanyShow.aspx.designer.cs">
+      <DependentUpon>ComPanyShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\zdompany\UpdateCompany.aspx.cs">
+      <DependentUpon>UpdateCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\zdompany\UpdateCompany.aspx.designer.cs">
+      <DependentUpon>UpdateCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bao_ValidCode.aspx.cs">
+      <DependentUpon>bao_ValidCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bao_ValidCode.aspx.designer.cs">
+      <DependentUpon>bao_ValidCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyLogo.aspx.cs">
+      <DependentUpon>CompanyLogo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyLogo.aspx.designer.cs">
+      <DependentUpon>CompanyLogo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DemandList.aspx.cs">
+      <DependentUpon>DemandList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DemandList.aspx.designer.cs">
+      <DependentUpon>DemandList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DemandsDetail.aspx.cs">
+      <DependentUpon>DemandsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DemandsDetail.aspx.designer.cs">
+      <DependentUpon>DemandsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FindPasspwod.aspx.cs">
+      <DependentUpon>FindPasspwod.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FindPasspwod.aspx.designer.cs">
+      <DependentUpon>FindPasspwod.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\Demand.ashx.cs">
+      <DependentUpon>Demand.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\HeadMenu.ascx.cs">
+      <DependentUpon>HeadMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\HeadMenu.ascx.designer.cs">
+      <DependentUpon>HeadMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\Register.ashx.cs">
+      <DependentUpon>Register.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\WebFoot.ascx.cs">
+      <DependentUpon>WebFoot.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\WebFoot.ascx.designer.cs">
+      <DependentUpon>WebFoot.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\WebHead.ascx.cs">
+      <DependentUpon>WebHead.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Handler\WebHead.ascx.designer.cs">
+      <DependentUpon>WebHead.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Loginout.aspx.cs">
+      <DependentUpon>Loginout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Loginout.aspx.designer.cs">
+      <DependentUpon>Loginout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDemands.aspx.cs">
+      <DependentUpon>MyDemands.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDemands.aspx.designer.cs">
+      <DependentUpon>MyDemands.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Neirong.aspx.cs">
+      <DependentUpon>Neirong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Neirong.aspx.designer.cs">
+      <DependentUpon>Neirong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PostDetail.aspx.cs">
+      <DependentUpon>PostDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PostDetail.aspx.designer.cs">
+      <DependentUpon>PostDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterSecond.aspx.cs">
+      <DependentUpon>RegisterSecond.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterSecond.aspx.designer.cs">
+      <DependentUpon>RegisterSecond.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterThird .aspx.cs">
+      <DependentUpon>RegisterThird .aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterThird .aspx.designer.cs">
+      <DependentUpon>RegisterThird .aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceNews.aspx.cs">
+      <DependentUpon>ServiceNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiceNews.aspx.designer.cs">
+      <DependentUpon>ServiceNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TongJi.aspx.cs">
+      <DependentUpon>TongJi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TongJi.aspx.designer.cs">
+      <DependentUpon>TongJi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updatepwd.aspx.cs">
+      <DependentUpon>updatepwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updatepwd.aspx.designer.cs">
+      <DependentUpon>updatepwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateUserpfile.aspx.cs">
+      <DependentUpon>UpdateUserpfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateUserpfile.aspx.designer.cs">
+      <DependentUpon>UpdateUserpfile.aspx</DependentUpon>
+    </Compile>
+    <Content Include="Admin\Ueditor\net\Uploader.cs" />
+    <Compile Include="Admin\post\PostShow.aspx.cs">
+      <DependentUpon>PostShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\post\PostShow.aspx.designer.cs">
+      <DependentUpon>PostShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\service\DemandHandler.ashx.cs">
+      <DependentUpon>DemandHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Shuqiushouli\Refuse.aspx.cs">
+      <DependentUpon>Refuse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Shuqiushouli\Refuse.aspx.designer.cs">
+      <DependentUpon>Refuse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Shuqiushouli\SelectDemand.aspx.cs">
+      <DependentUpon>SelectDemand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Shuqiushouli\SelectDemand.aspx.designer.cs">
+      <DependentUpon>SelectDemand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Shuqiushouli\Shouli.aspx.cs">
+      <DependentUpon>Shouli.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Shuqiushouli\Shouli.aspx.designer.cs">
+      <DependentUpon>Shouli.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControls\Head.ascx.cs">
+      <DependentUpon>Head.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControls\Head.ascx.designer.cs">
+      <DependentUpon>Head.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\user\UserAdd.aspx.cs">
+      <DependentUpon>UserAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\user\UserAdd.aspx.designer.cs">
+      <DependentUpon>UserAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\user\UserProfileAdd.aspx.cs">
+      <DependentUpon>UserProfileAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\user\UserProfileAdd.aspx.designer.cs">
+      <DependentUpon>UserProfileAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\user\UserProfileShow.aspx.cs">
+      <DependentUpon>UserProfileShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\user\UserProfileShow.aspx.designer.cs">
+      <DependentUpon>UserProfileShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\login.ashx.cs">
+      <DependentUpon>login.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{3B60BE11-95E8-4E1E-BC11-C729EADADD5F}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{FC3965F3-F038-42C9-9045-2F3F87530862}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{E28F827B-ED17-4167-B173-C4776D67A735}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Web\Web.csproj">
+      <Project>{2c8607da-78e4-4c28-b768-b8881846cc0c}</Project>
+      <Name>Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Ueditor\net\fileUp.ashx" />
+    <Content Include="Admin\Ueditor\net\getContent.ashx" />
+    <Content Include="Admin\Ueditor\net\getMovie.ashx" />
+    <Content Include="Admin\Ueditor\net\getRemoteImage.ashx" />
+    <Content Include="Admin\Ueditor\net\imageManager.ashx" />
+    <Content Include="Admin\Ueditor\net\imageUp.ashx" />
+    <Content Include="Admin\Ueditor\net\scrawlUp.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Ueditor\net\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Demand\banli.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Handler\login.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Handler\Register.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\service\DemandHandler.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Handler\Demand.ashx" />
+    <None Include="Properties\PublishProfiles\配置文件1.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="uploadimg\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6384</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,14 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{ margin:0px auto;}
+body{ background:#2c2d99; font-size:14px; font-family:"微软雅黑";}
+.container{ background:url(../img/bg.png) no-repeat; height:700px; width:100%;}
+.main{ background:url(../img/denglu.gif) no-repeat; width:577px; height:319px; display:inline-block; margin-top:220px; margin-left:700px;}
+.secrit{ margin-top:15px; margin-left:14px;}
+.identify{ margin-top:15px; float:left;
+    width: 297px;
+}
+.identify input{ width:70px;}
+.identify img{ float:right;_margin-right:90px;_margin-top:-22px;}
+.anniu{ width:100px; float:right; margin-top:135px; margin-right:55px;_margin-top:-105px;_margin-right:23px;}
+button{ border:0; background:none;}

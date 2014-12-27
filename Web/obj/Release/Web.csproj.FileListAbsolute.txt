@@ -1,0 +1,12 @@
+D:\git\webser2012\ServiceWeb\Web\bin\Release\Web.dll
+D:\git\webser2012\ServiceWeb\Web\bin\Release\Web.pdb
+D:\git\webser2012\ServiceWeb\Web\bin\Release\BLL.dll
+D:\git\webser2012\ServiceWeb\Web\bin\Release\DAL.dll
+D:\git\webser2012\ServiceWeb\Web\bin\Release\Model.dll
+D:\git\webser2012\ServiceWeb\Web\bin\Release\Maticsoft.Common.dll
+D:\git\webser2012\ServiceWeb\Web\bin\Release\BLL.pdb
+D:\git\webser2012\ServiceWeb\Web\bin\Release\DAL.pdb
+D:\git\webser2012\ServiceWeb\Web\bin\Release\Model.pdb
+D:\git\webser2012\ServiceWeb\Web\obj\Release\Web.csprojResolveAssemblyReference.cache
+D:\git\webser2012\ServiceWeb\Web\obj\Release\Web.dll
+D:\git\webser2012\ServiceWeb\Web\obj\Release\Web.pdb

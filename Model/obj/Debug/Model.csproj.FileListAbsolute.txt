@@ -1,0 +1,15 @@
+E:\项目\webser2012\ServiceWeb\Model\bin\Debug\Model.dll
+E:\项目\webser2012\ServiceWeb\Model\bin\Debug\Model.pdb
+E:\项目\webser2012\ServiceWeb\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\项目\webser2012\ServiceWeb\Model\obj\Debug\Model.dll
+E:\项目\webser2012\ServiceWeb\Model\obj\Debug\Model.pdb
+E:\项目\ServiceWeb\Model\bin\Debug\Model.dll
+E:\项目\ServiceWeb\Model\bin\Debug\Model.pdb
+E:\项目\ServiceWeb\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\项目\ServiceWeb\Model\obj\Debug\Model.dll
+E:\项目\ServiceWeb\Model\obj\Debug\Model.pdb
+D:\git\webser2012\ServiceWeb\Model\bin\Debug\Model.dll
+D:\git\webser2012\ServiceWeb\Model\bin\Debug\Model.pdb
+D:\git\webser2012\ServiceWeb\Model\obj\Debug\Model.dll
+D:\git\webser2012\ServiceWeb\Model\obj\Debug\Model.pdb
+D:\git\webser2012\ServiceWeb\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

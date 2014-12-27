@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3B60BE11-95E8-4E1E-BC11-C729EADADD5F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Maticsoft.Common">
+      <HintPath>..\..\..\1129企业服务网\ServiceWeb\ServiceWeb\bin\Maticsoft.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BannerImg.cs" />
+    <Compile Include="BannerImgExpand.cs" />
+    <Compile Include="CompanyType.cs" />
+    <Compile Include="CompanyTypeExpand.cs" />
+    <Compile Include="County.cs" />
+    <Compile Include="CountyExpand.cs" />
+    <Compile Include="DemandProfile.cs" />
+    <Compile Include="DemandProfile2.cs" />
+    <Compile Include="Demands.cs" />
+    <Compile Include="Demands2.cs" />
+    <Compile Include="DemandType.cs" />
+    <Compile Include="DemandTypeNew.cs" />
+    <Compile Include="Department.cs" />
+    <Compile Include="Department2.cs" />
+    <Compile Include="EmphasisComPany.cs" />
+    <Compile Include="ForgetPwdLog.cs" />
+    <Compile Include="ForgetPwdLogExpand.cs" />
+    <Compile Include="Member.cs" />
+    <Compile Include="MemberExpand.cs" />
+    <Compile Include="PageManager.cs" />
+    <Compile Include="Post.cs" />
+    <Compile Include="Post2.cs" />
+    <Compile Include="PostType.cs" />
+    <Compile Include="PostTypeExpand.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sysdiagrams.cs" />
+    <Compile Include="UserProfile.cs" />
+    <Compile Include="UserProfile2.cs" />
+    <Compile Include="VContactInfo.cs" />
+    <Compile Include="VDemandResult.cs" />
+    <Compile Include="VDemandsProfile.cs" />
+    <Compile Include="VMemberInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{FC3965F3-F038-42C9-9045-2F3F87530862}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{E28F827B-ED17-4167-B173-C4776D67A735}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

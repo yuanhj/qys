@@ -1,0 +1,8 @@
+D:\git\webser2012\ServiceWeb\DAL\bin\Release\DAL.dll
+D:\git\webser2012\ServiceWeb\DAL\bin\Release\DAL.pdb
+D:\git\webser2012\ServiceWeb\DAL\bin\Release\Maticsoft.DBUtility.dll
+D:\git\webser2012\ServiceWeb\DAL\bin\Release\Model.dll
+D:\git\webser2012\ServiceWeb\DAL\bin\Release\Model.pdb
+D:\git\webser2012\ServiceWeb\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+D:\git\webser2012\ServiceWeb\DAL\obj\Release\DAL.dll
+D:\git\webser2012\ServiceWeb\DAL\obj\Release\DAL.pdb

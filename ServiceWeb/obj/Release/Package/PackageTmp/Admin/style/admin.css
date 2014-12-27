@@ -1,0 +1,26 @@
+﻿.demanitem-well{ overflow: auto;}
+.demanitem{ height: 120px;border-bottom: 1px solid #dedede;margin-bottom: 10px;}
+.requirement{ height: 65px;width: 915px;}
+.message{ width: 960px;height: 125px;}
+.banliitem{ height: 260px;border-bottom: 1px solid #dedede;margin-bottom: 10px;}
+.r-message{ height: 180px;}
+.controls-logo{ height: 70px;}
+.w180{ width: 180px;}
+.h180{ height: 180px;}
+.h125{ height: 125px;}
+.h140{ height: 140px;}
+.clear{ clear: both;}
+.wauto{ width: auto;}
+.w50{ width: 50px;}
+
+.manager-login{ width: 560px;height: 180px;margin: 150px auto 0px auto;border: 1px solid #ccc;padding: 20px;}
+.manager-login h3{ font-size: 18px;font-family: "微软件雅黑";font-weight: bold;}
+.manager-login .row-button{ text-align: right;}
+.chklist label{ padding: 0px 5px 0px 2px;}
+.showbox{ width: 1000px;height: 350px;margin: 150px auto 0px auto;padding: 10px;font-family: "微软雅黑";font-size: 14px;line-height: 25px;}
+.clogo{ width: 180px;height: 60px;}
+.btn-del{ margin-left: 10px;position: relative;bottom: -20px;}
+
+.page span{background-color: white;}
+.page span, .page a{ width: 25px;height: 25px;text-align: center;border: 1px solid #dadada;display: inline-block;line-height: 25px;}
+.itemresult{border-bottom: 1px solid #dedede;margin-bottom: 10px;}

@@ -1,0 +1,5 @@
+D:\git\webser2012\ServiceWeb\Model\bin\Release\Model.dll
+D:\git\webser2012\ServiceWeb\Model\bin\Release\Model.pdb
+D:\git\webser2012\ServiceWeb\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+D:\git\webser2012\ServiceWeb\Model\obj\Release\Model.dll
+D:\git\webser2012\ServiceWeb\Model\obj\Release\Model.pdb
